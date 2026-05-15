@@ -1,0 +1,5 @@
+{
+  "phone": "919999999999",
+  "user_message": "restart",
+  "bot_response": "🙏 *Namaste!* Welcome to the Government Schemes Assistant.\n\nI can help you find government schemes you're eligible for and guide you step-by-step through the application process.\n\nLet's get started! Tell me about yourself:\n\n1️⃣ Student\n2️⃣ Farmer\n3️⃣ Job Seeker\n4️⃣ Other\n\n_Reply with a number or type your category._"
+}

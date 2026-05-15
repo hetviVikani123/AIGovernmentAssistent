@@ -1,0 +1,129 @@
+﻿============================================================
+GOVERNMENT SCHEMES BOT - FULL DIAGNOSTIC
+============================================================
+
+>>> TESTING /health <<<
+Status: 200, Body: {'status': 'healthy', 'service': 'Government Schemes AI Agent', 'version': '1.0.0', 'environment': 'development'}
+
+>>> TESTING / (root) <<<
+Status: 200, Content-Type: text/html; charset=utf-8
+Starts with: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content
+
+
+>>> STEP 0: RESET <<<
+
+============================================================
+USER (test_diag_001): restart
+BOT : ≡ƒÖÅ *Namaste!* Welcome to the Government Schemes Assistant.
+
+I can help you find government schemes you're eligible for and guide you step-by-step through the application process.
+
+Let's get started! Tell me about yourself:
+
+1∩╕ÅΓâú Student
+2∩╕ÅΓâú Farmer
+3∩╕ÅΓâú Job Seeker
+4∩╕ÅΓâú Other
+
+_Reply with a number or type
+============================================================
+
+>>> STEP 1: GREETING <<<
+
+============================================================
+USER (test_diag_001): hi
+BOT : ≡ƒÖÅ *Namaste!* Welcome to the Government Schemes Assistant.
+
+I can help you find government schemes you're eligible for and guide you step-by-step through the application process.
+
+Let's get started! Tell me about yourself:
+
+1∩╕ÅΓâú Student
+2∩╕ÅΓâú Farmer
+3∩╕ÅΓâú Job Seeker
+4∩╕ÅΓâú Other
+
+_Reply with a number or type
+============================================================
+
+>>> STEP 2: CATEGORY <<<
+
+============================================================
+USER (test_diag_001): 1
+BOT : ≡ƒÖÅ *Namaste!* Welcome to the Government Schemes Assistant.
+
+I can help you find government schemes you're eligible for and guide you step-by-step through the application process.
+
+Let's get started! Tell me about yourself:
+
+1∩╕ÅΓâú Student
+2∩╕ÅΓâú Farmer
+3∩╕ÅΓâú Job Seeker
+4∩╕ÅΓâú Other
+
+_Reply with a number or type
+============================================================
+!!! BUG: Picking category '1' should ask about income
+
+>>> STEP 3: INCOME <<<
+
+============================================================
+USER (test_diag_001): 1
+BOT : ≡ƒæì Great, *Student*!
+
+Now, what is your family's annual income?
+
+1∩╕ÅΓâú Below Γé╣1 lakh
+2∩╕ÅΓâú Γé╣1ΓÇô3 lakh
+3∩╕ÅΓâú Γé╣3ΓÇô5 lakh
+4∩╕ÅΓâú Above Γé╣5 lakh
+
+_Reply with a number._
+============================================================
+!!! BUG: Picking income '1' should ask about state
+
+>>> STEP 4: STATE <<<
+
+============================================================
+USER (test_diag_001): maharashtra
+BOT : ≡ƒñö Please select your income range:
+
+1∩╕ÅΓâú Below Γé╣1 lakh
+2∩╕ÅΓâú Γé╣1ΓÇô3 lakh
+3∩╕ÅΓâú Γé╣3ΓÇô5 lakh
+4∩╕ÅΓâú Above Γé╣5 lakh
+============================================================
+!!! BUG: Entering state should ask about special category
+
+>>> STEP 5: SPECIAL CATEGORY <<<
+
+============================================================
+USER (test_diag_001): 1
+BOT : ≡ƒôì Which state do you live in?
+
+_Type your state name (e.g., Maharashtra, Tamil Nadu, Delhi)_
+============================================================
+!!! BUG: Should show matched schemes
+
+>>> STEP 6: SCHEME DETAIL <<<
+
+============================================================
+USER (test_diag_001): 1
+BOT : ≡ƒñö I couldn't recognise that state.
+
+Please type a valid Indian state or UT name
+_(e.g., Maharashtra, Kerala, Delhi, Uttar Pradesh)_
+============================================================
+!!! BUG: Should show scheme details
+
+
+>>> TESTING /api/chat ENDPOINT <<<
+Status: 200
+Chat response: ΓÜá∩╕Å The AI service has run out of credits. Please check your OpenAI billing at platform.openai.com and add funds to continue.
+
+
+>>> ALL TESTS COMPLETE <<<

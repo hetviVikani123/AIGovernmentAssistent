@@ -1,0 +1,134 @@
+﻿============================================================
+GOVERNMENT SCHEMES BOT - FULL DIAGNOSTIC
+============================================================
+
+>>> TESTING /health <<<
+Status: 200, Body: {'status': 'healthy', 'service': 'Government Schemes AI Agent', 'version': '1.0.0', 'environment': 'development'}
+
+>>> TESTING / (root) <<<
+Status: 200, Content-Type: text/html; charset=utf-8
+Starts with: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content
+
+
+>>> STEP 0: RESET <<<
+
+============================================================
+USER (test_diag_001): restart
+BOT : ≡ƒÖÅ *Namaste!* Welcome to the Government Schemes Assistant.
+
+I can help you find government schemes you're eligible for and guide you step-by-step through the application process.
+
+Let's get started! Tell me about yourself:
+
+1∩╕ÅΓâú Student
+2∩╕ÅΓâú Farmer
+3∩╕ÅΓâú Job Seeker
+4∩╕ÅΓâú Other
+
+_Reply with a number or type
+============================================================
+
+>>> STEP 1: GREETING <<<
+
+============================================================
+USER (test_diag_001): hi
+BOT : ≡ƒÖÅ *Namaste!* Welcome to the Government Schemes Assistant.
+
+I can help you find government schemes you're eligible for and guide you step-by-step through the application process.
+
+Let's get started! Tell me about yourself:
+
+1∩╕ÅΓâú Student
+2∩╕ÅΓâú Farmer
+3∩╕ÅΓâú Job Seeker
+4∩╕ÅΓâú Other
+
+_Reply with a number or type
+============================================================
+
+>>> STEP 2: CATEGORY <<<
+
+============================================================
+USER (test_diag_001): 1
+BOT : ≡ƒæì Great, *Student*!
+
+Now, what is your family's annual income?
+
+1∩╕ÅΓâú Below Γé╣1 lakh
+2∩╕ÅΓâú Γé╣1ΓÇô3 lakh
+3∩╕ÅΓâú Γé╣3ΓÇô5 lakh
+4∩╕ÅΓâú Above Γé╣5 lakh
+
+_Reply with a number._
+============================================================
+
+>>> STEP 3: INCOME <<<
+
+============================================================
+USER (test_diag_001): 1
+BOT : ≡ƒôì Which state do you live in?
+
+_Type your state name (e.g., Maharashtra, Tamil Nadu, Delhi)_
+============================================================
+
+>>> STEP 4: STATE <<<
+
+============================================================
+USER (test_diag_001): maharashtra
+BOT : One more question!
+
+Do you belong to any special category?
+
+1∩╕ÅΓâú None / General
+2∩╕ÅΓâú SC / ST
+3∩╕ÅΓâú Girl Child (scheme beneficiary)
+4∩╕ÅΓâú Senior Citizen (60+)
+5∩╕ÅΓâú Skip
+
+_Reply with a number._
+============================================================
+
+>>> STEP 5: SPECIAL CATEGORY <<<
+
+============================================================
+USER (test_diag_001): 1
+BOT : ≡ƒÄë *Great news!* I found *3* scheme(s) for you:
+
+*1.* Γ£à *PM Scholarship Scheme*
+≡ƒÆ░ Benefit: Γé╣2,000ΓÇôΓé╣3,000 per month scholarship for professional and technical courses
+≡ƒæñ Who can apply: Children of ex-servicemen or serving armed forces personnel
+≡ƒôä Documents needed: Aadhaar Card, Income Certificate, Educ
+============================================================
+
+>>> STEP 6: SCHEME DETAIL <<<
+
+============================================================
+USER (test_diag_001): 1
+BOT : ≡ƒôï *PM Scholarship Scheme*
+
+≡ƒÆ░ *Benefit:*
+Γé╣2,000ΓÇôΓé╣3,000 per month scholarship for professional and technical courses
+
+≡ƒæñ *Eligibility:*
+Children of ex-servicemen or serving armed forces personnel
+
+≡ƒôä *Documents Required:*
+  ΓÇó Aadhaar Card
+  ΓÇó Income Certificate
+  ΓÇó Educational Certificates
+  ΓÇó Bank Acco
+============================================================
+
+
+>>> TESTING /api/chat ENDPOINT <<<
+Status: 200
+Chat response: 
+
+ΓÜá∩╕Å Error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.op
+
+
+>>> ALL TESTS COMPLETE <<<
